@@ -1,0 +1,161 @@
+.create-page{
+  padding: 16px 16px 0;
+  min-height: calc(100vh - 150px);
+}
+
+.create-top-actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.create-close-btn{
+  width: 34px;
+  height: 34px;
+  border: 0;
+  background: transparent;
+  color: #b8b1c5;
+  font-size: 22px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.create-publish-btn{
+  min-width: 104px;
+  height: 44px;
+  border-radius: 999px;
+  background: var(--milpa-orange);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 8px 18px rgba(246,162,26,.28);
+}
+
+.create-publish-btn:hover{
+  background: #ef9810;
+  color: #fff;
+}
+
+.create-user-block{
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.create-user-avatar{
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.create-user-info{
+  flex: 1;
+  min-width: 0;
+}
+
+.create-user-name{
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: var(--milpa-text);
+}
+
+.create-user-country{
+  margin: 0 0 8px;
+  font-size: 13px;
+  line-height: 1.1;
+  color: #64606f;
+}
+
+.create-chips{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.create-chip{
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 0;
+  background: #f1d9a7;
+  color: #9a7024;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.create-chip i{
+  font-size: 11px;
+}
+
+.create-chip-light{
+  background: #f3e3c3;
+}
+
+.create-input-block{
+  margin-bottom: 40px;
+}
+
+.create-textarea{
+  width: 100%;
+  min-height: 120px;
+  border: 0;
+  outline: none;
+  resize: none;
+  background: transparent;
+  font-size: 24px;
+  line-height: 1.35;
+  color: var(--milpa-text);
+}
+
+.create-textarea::placeholder{
+  color: #c3bfd0;
+}
+
+.create-tools-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px 14px;
+  padding: 8px 10px 0;
+  
+}
+
+.create-tool{
+  border: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.create-tool-icon{
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  background: var(--milpa-lilac-soft);
+  color: var(--milpa-lilac-icon);
+  display: grid;
+  place-items: center;
+  font-size: 23px;
+}
+
+.create-tool-text{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.create-tool-label{
+  font-size: 14px;
+  color: #34313b;
+}

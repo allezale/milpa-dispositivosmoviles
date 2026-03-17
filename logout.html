@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Milpa - Hasta luego</title>
+
+  <link rel="stylesheet" href="css/base.css">
+
+
+
+  <!-- Paginita de logout y carga al cerrar sesion-->
+  <style>
+    .logout-page{
+      min-height: 100vh;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .logout-ring{
+      width: 142px;
+      height: 142px;
+      border-radius: 999px;
+      border: 10px solid #b27b2e;
+      border-top-color: var(--milpa-orange);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      animation: spinRing 1.2s linear infinite;
+    }
+
+    .logout-ring img{
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+    }
+
+    .logout-text{
+      margin: 0;
+      font-size: 22px;
+      font-weight: 800;
+      color: #211d2a;
+    }
+
+    @keyframes spinRing{
+      from{ transform: rotate(0deg); }
+      to{ transform: rotate(360deg); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="logout-page">
+    <div class="logout-ring">
+      <img src="img/logo.png" alt="Milpa">
+    </div>
+
+    <h1 class="logout-text">Hasta luego!</h1>
+  </main>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "login.html";
+    }, 2500);
+  </script>
+</body>
+</html>

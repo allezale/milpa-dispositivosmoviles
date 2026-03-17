@@ -13,7 +13,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/auth.css">
 </head>
 
 <body class="bg-white">
@@ -53,26 +54,26 @@
         </div>
 
         <div class="milpa-input mb-3">
-          <span class="milpa-icon"><i class="fa-solid fa-lock"></i></span>
-          <input id="regPassword" type="password" class="form-control milpa-control" placeholder="Contraseña" required>
+  <span class="milpa-icon"><i class="fa-solid fa-lock"></i></span>
+  <input id="regPassword" type="password" class="form-control milpa-control" placeholder="Contraseña" required>
 
-          <button class="milpa-eye" type="button"
-                  onclick="togglePassword('regPassword','toggleIconReg')"
-                  aria-label="Mostrar u ocultar contraseña">
-            <i class="fa-solid fa-eye" id="toggleIconReg"></i>
-          </button>
-        </div>
+  <button class="milpa-eye" type="button"
+          onclick="togglePassword('regPassword','toggleIconReg')"
+          aria-label="Mostrar u ocultar contraseña">
+    <i class="fa-solid fa-eye" id="toggleIconReg"></i>
+  </button>
+</div>
 
-        <div class="milpa-input mb-4">
-          <span class="milpa-icon"><i class="fa-solid fa-lock"></i></span>
-          <input id="regConfirmPassword" type="password" class="form-control milpa-control" placeholder="Confirmar contraseña" required>
+<div class="milpa-input mb-4">
+  <span class="milpa-icon"><i class="fa-solid fa-lock"></i></span>
+  <input id="regConfirmPassword" type="password" class="form-control milpa-control" placeholder="Confirmar contraseña" required>
 
-          <button class="milpa-eye" type="button"
-                  onclick="togglePassword('regConfirmPassword','toggleIconRegConfirm')"
-                  aria-label="Mostrar u ocultar contraseña">
-            <i class="fa-solid fa-eye" id="toggleIconRegConfirm"></i>
-          </button>
-        </div>
+  <button class="milpa-eye" type="button"
+          onclick="togglePassword('regConfirmPassword','toggleIconRegConfirm')"
+          aria-label="Mostrar u ocultar contraseña">
+    <i class="fa-solid fa-eye" id="toggleIconRegConfirm"></i>
+  </button>
+</div>
 
         <button type="button" class="btn milpa-btn w-100 mb-3" onclick="window.location.href='verify.html'">
           Registrarme

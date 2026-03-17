@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Milpa - Chat</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/chat-room.css">
+</head>
+
+<body class="bg-white app-body">
+
+  <div class="app-screen chat-room-screen">
+
+    <nav class="chat-room-topbar">
+      <button class="chat-room-back" type="button" onclick="window.location.href='chat.html'" aria-label="Volver">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+
+      <div class="chat-room-user">
+        <h1 class="chat-room-name">Alexis</h1>
+        <p class="chat-room-status">Amigos</p>
+      </div>
+
+      <img src="img/user1.png" alt="Alexis" class="chat-room-avatar">
+    </nav>
+
+    <main class="chat-room-messages" id="messagesContainer">
+
+      <div class="message-row message-row-out">
+        <div class="message-bubble message-bubble-out">
+          Fijate que ya días ando con el antojo
+        </div>
+      </div>
+      <div class="message-time message-time-out">9:28 p.m.</div>
+
+      <div class="message-day">Hoy</div>
+
+      <div class="message-row message-row-in">
+        <div class="message-bubble message-bubble-in">
+          Las baleadas son mucho mejores que las pupusas. Change my mind...
+        </div>
+      </div>
+      <div class="message-time message-time-in">Ayer 11:50 pm</div>
+
+      <div class="message-row message-row-out">
+        <div class="message-bubble message-bubble-out">
+          No tienes idea de lo que dices...
+        </div>
+      </div>
+      <div class="message-time message-time-out">ahora</div>
+
+    </main>
+
+    <div class="chat-room-inputbar">
+      <div class="chat-room-inputwrap">
+        <button type="button" class="chat-room-attach" aria-label="Adjuntar">
+          <i class="fa-solid fa-paperclip"></i>
+        </button>
+
+        <input
+          type="text"
+          id="chatInput"
+          class="chat-room-input"
+          placeholder="Escribe algo">
+
+      </div>
+
+      <button type="button" id="sendBtn" class="chat-room-send" aria-label="Enviar">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <script src="js/chat-room.js"></script>
+</body>
+</html>

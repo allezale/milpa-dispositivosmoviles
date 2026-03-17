@@ -7,19 +7,22 @@
 
   <title>Milpa - Notificaciones</title>
 
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/notifications.css">
 </head>
 
 <body class="bg-white app-body">
 
   <div class="app-screen home-screen">
 
-  <!-- barra de arriba el menu el logo y pfp -->
-    <header class="home-topbar">
-      <button class="icon-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#milpaMenu" aria-label="Abrir menú">
+    <!-- barra de arriba -->
+    <nav class="home-topbar">
+      <button class="icon-btn" type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#milpaMenu"
+              aria-label="Abrir menú">
         <i class="fa-solid fa-bars"></i>
       </button>
 
@@ -30,88 +33,232 @@
       <button class="avatar-btn" type="button" onclick="window.location.href='profile.html'">
         <img src="img/avatar.png" alt="Perfil" class="home-avatar">
       </button>
-    </header>
+    </nav>
 
-<!-- hmb de la izq-->
-<div class="offcanvas offcanvas-start milpa-offcanvas" tabindex="-1" id="milpaMenu" aria-labelledby="milpaMenuLabel">
-  <div class="offcanvas-header milpa-sidebar-header">
-    <div class="milpa-sidebar-brand">
-      <img src="img/logo.png" alt="Milpa" class="milpa-sidebar-logo">
-      <span class="milpa-sidebar-title">milpa</span>
+    
+    <div class="offcanvas offcanvas-start milpa-offcanvas" tabindex="-1" id="milpaMenu" aria-labelledby="milpaMenuLabel">
+      <div class="offcanvas-header milpa-sidebar-header">
+        <div class="milpa-sidebar-brand">
+          <img src="img/logo.png" alt="Milpa" class="milpa-sidebar-logo">
+          <span class="milpa-sidebar-title">milpa</span>
+        </div>
+      </div>
+
+      <div class="offcanvas-body milpa-sidebar-body">
+        <a href="profile.html" class="sidebar-link">
+          <i class="fa-regular fa-user"></i>
+          <span>Perfil</span>
+        </a>
+
+        <a href="settings.html" class="sidebar-link">
+          <i class="fa-solid fa-gear"></i>
+          <span>Ajustes</span>
+        </a>
+      </div>
     </div>
-  </div>
-
-  <div class="offcanvas-body milpa-sidebar-body">
-    <a href="profile.html" class="sidebar-link">
-      <i class="fa-regular fa-user"></i>
-      <span>Perfil</span>
-    </a>
-
-    <a href="favorites.html" class="sidebar-link">
-      <i class="fa-regular fa-heart"></i>
-      <span>Favoritos</span>
-    </a>
-
-    <a href="settings.html" class="sidebar-link">
-      <i class="fa-solid fa-gear"></i>
-      <span>Ajustes</span>
-    </a>
-  </div>
-</div>
 
     <main class="notifications-page">
 
-      <!-- Tabs de notis -->
+   
       <div class="notifications-tabs">
-        <button type="button" class="notifications-tab active">Publicaciones</button>
-        <button type="button" class="notifications-tab">Amigos</button>
-        <button type="button" class="notifications-tab">Menciones</button>
+        <button type="button" class="notifications-tab active" data-tab="posts">Publicaciones</button>
+        <button type="button" class="notifications-tab" data-tab="friends">Amigos</button>
+        <button type="button" class="notifications-tab" data-tab="mentions">Menciones</button>
       </div>
 
-      <!-- List -->
-      <section class="notifications-list">
+     
+      <section class="notifications-panel active" id="posts">
 
-        <!-- noti 1 -->
-        <article class="notification-item">
-          <button type="button" class="notification-btn">
-            <img src="img/user1.png" alt="Valeria Mejía" class="notification-avatar">
+        <section class="notifications-list">
 
-            <div class="notification-info">
-              <p class="notification-text">
-                <strong>Valeria Mejía</strong> le ha dado me gusta a tu publicación.
-              </p>
-              <span class="notification-time">15 sec</span>
-            </div>
+          <article class="notification-item">
+            <button type="button" class="notification-btn">
+              <img src="img/user1.png" alt="Valeria Mejía" class="notification-avatar">
 
-            <span class="notification-more">
-              <i class="fa-solid fa-ellipsis"></i>
-            </span>
-          </button>
-        </article>
+              <div class="notification-info">
+                <p class="notification-text">
+                  <strong>Valeria Mejía</strong> le ha dado me gusta a tu publicación.
+                </p>
+                <span class="notification-time">15 sec</span>
+              </div>
 
-        <!-- noti 2 -->
-        <article class="notification-item">
-          <button type="button" class="notification-btn">
-            <img src="img/user2.png" alt="Alejandro Mora" class="notification-avatar">
+              <span class="notification-more">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </button>
+          </article>
 
-            <div class="notification-info">
-              <p class="notification-text">
-                <strong>Alejandro Mora</strong> ha comentado en tu publicación.
-              </p>
-              <span class="notification-time">2 horas</span>
-            </div>
+          <article class="notification-item">
+            <button type="button" class="notification-btn">
+              <img src="img/user2.png" alt="Alejandro Mora" class="notification-avatar">
 
-            <span class="notification-more">
-              <i class="fa-solid fa-ellipsis"></i>
-            </span>
-          </button>
-        </article>
+              <div class="notification-info">
+                <p class="notification-text">
+                  <strong>Alejandro Mora</strong> ha comentado en tu publicación.
+                </p>
+                <span class="notification-time">2 horas</span>
+              </div>
+
+              <span class="notification-more">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </button>
+          </article>
+
+        </section>
+      </section>
+
+    
+      <section class="notifications-panel" id="friends">
+
+        <section class="notifications-list">
+
+          <article class="notification-item">
+            <button type="button" class="notification-btn">
+              <img src="img/user2.png" alt="Vanessa Rivera" class="notification-avatar">
+
+              <div class="notification-info">
+                <p class="notification-text">
+                  <strong>Vanessa Rivera</strong> ha subido una nueva publicación.
+                </p>
+                <span class="notification-time">15 sec</span>
+              </div>
+
+              <span class="notification-more">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </button>
+          </article>
+
+          <article class="notification-item">
+            <button type="button" class="notification-btn">
+              <img src="img/user1.png" alt="Gabriela Chacón" class="notification-avatar">
+
+              <div class="notification-info">
+                <p class="notification-text">
+                  <strong>Gabriela Chacón</strong> ha comentado en la publicación de Chimbombarrera.
+                </p>
+                <span class="notification-time">2 horas</span>
+              </div>
+
+              <span class="notification-more">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </button>
+          </article>
+
+        </section>
+      </section>
+
+  
+      <section class="notifications-panel" id="mentions">
+
+        <section class="notifications-list mentions-list">
+
+          <article class="notification-item">
+            <button type="button" class="notification-btn">
+              <img src="img/user1.png" alt="Gabriela Chacón" class="notification-avatar">
+
+              <div class="notification-info">
+                <p class="notification-text">
+                  <strong>Gabriela Chacón</strong> te ha mencionado: @chuquirrico ya antojaste maje
+                </p>
+                <span class="notification-time">15 sec</span>
+              </div>
+
+              <span class="notification-more">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </button>
+          </article>
+
+          <article class="notification-item">
+            <button type="button" class="notification-btn">
+              <img src="img/user2.png" alt="Juan Morales" class="notification-avatar">
+
+              <div class="notification-info">
+                <p class="notification-text">
+                  <strong>Juan Morales</strong> te ha mencionado: @chuquirrico cuándo, vos pone hora y fecha
+                </p>
+                <span class="notification-time">1 min</span>
+              </div>
+
+              <span class="notification-more">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </button>
+          </article>
+
+          <article class="notification-item">
+            <button type="button" class="notification-btn">
+              <img src="img/user1.png" alt="Miguel Castillo" class="notification-avatar">
+
+              <div class="notification-info">
+                <p class="notification-text">
+                  <strong>Miguel Castillo</strong> te ha mencionado: @chuquirrico y no invitas, ves como sos mafer
+                </p>
+                <span class="notification-time">5 sec</span>
+              </div>
+
+              <span class="notification-more">
+                <i class="fa-solid fa-ellipsis"></i>
+              </span>
+            </button>
+          </article>
+
+        </section>
+
+   
+        <section class="suggestions-box">
+          <div class="suggestions-header">
+            <h3>Personas que quizás conozcas</h3>
+            <a href="#">Ver todo</a>
+          </div>
+
+          <div class="suggestions-grid">
+
+            <article class="suggestion-card">
+              <button class="suggestion-close" type="button">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+
+              <img src="img/suggest.png" alt="" class="suggestion-bg">
+              <img src="img/user1.png" alt="Adriana Ruiz" class="suggestion-avatar">
+
+              <div class="suggestion-body">
+                <h4>Adriana Ruiz</h4>
+                <p class="suggestion-country">Costa Rica</p>
+                <p class="suggestion-mutuals">4 amigos en común</p>
+
+                <button type="button" class="btn suggestion-btn">Añadir</button>
+              </div>
+            </article>
+
+            <article class="suggestion-card">
+              <button class="suggestion-close" type="button">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+
+              <img src="img/suggest.png" alt="" class="suggestion-bg">
+              <img src="img/user2.png" alt="Henry Flores" class="suggestion-avatar">
+
+              <div class="suggestion-body">
+                <h4>Henry Flores</h4>
+                <p class="suggestion-country">El Salvador</p>
+                <p class="suggestion-mutuals">12 amigos en común</p>
+
+                <button type="button" class="btn suggestion-btn">Añadir</button>
+              </div>
+            </article>
+
+          </div>
+        </section>
 
       </section>
 
     </main>
 
-   <!-- Barra de nav -->
+    <!-- barra inferior -->
     <nav class="bottom-nav">
       <a href="home.html" class="bottom-nav-link" data-page="home">
         <i class="fa-solid fa-house"></i>
@@ -138,5 +285,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/home.js"></script>
+  <script src="js/notifications.js"></script>
 </body>
 </html>

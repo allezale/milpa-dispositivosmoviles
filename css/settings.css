@@ -1,0 +1,237 @@
+.settings-topbar{
+  height: 76px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  box-shadow: 0 2px 14px rgba(0,0,0,.06);
+}
+
+.settings-back-btn{
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background: transparent;
+  color: #2f2a34;
+  font-size: 22px;
+  display: grid;
+  place-items: center;
+}
+
+.settings-title{
+  margin: 0;
+  font-size: 19px;
+  font-weight: 500;
+  color: #2f2a34;
+}
+
+.settings-page{
+  min-height: calc(100vh - 154px);
+  background: var(--milpa-bg);
+  padding: 22px 18px 24px;
+  position: relative;
+}
+
+/* usuario */
+.settings-user-card{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.settings-user-avatar{
+  width: 74px;
+  height: 74px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.settings-user-name{
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--milpa-orange);
+}
+
+.settings-flag{
+  font-size: 18px;
+}
+
+/* lista */
+.settings-list{
+  border-top: 1px solid #d6d0dc;
+}
+
+.settings-item{
+  min-height: 48px;
+  border-bottom: 1px solid #d6d0dc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.settings-left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1f1b24;
+  font-size: 14px;
+}
+
+.settings-icon{
+  width: 18px;
+  text-align: center;
+  color: #1f1b24;
+}
+
+.settings-value{
+  font-size: 13px;
+  color: #8b8796;
+}
+
+.settings-arrow{
+  font-size: 12px;
+  color: #8b8796;
+}
+
+/* toggle */
+.settings-toggle{
+  width: 42px;
+  height: 24px;
+  border-radius: 999px;
+  border: 1.5px solid #d7b26b;
+  background: #f3deb2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2px;
+  transition: all .25s ease;
+}
+
+.settings-toggle-circle{
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: var(--milpa-orange);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  transition: all .25s ease;
+}
+
+.settings-toggle.active{
+  justify-content: flex-end;
+}
+
+.settings-toggle:not(.active) .settings-toggle-circle{
+  background: #f4a62a;
+  color: #fff;
+}
+
+/* logout */
+.settings-logout-wrap{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 210px;
+}
+
+.settings-logout-btn{
+  border: 0;
+  background: transparent;
+  color: #ff2d2d;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.logout-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.22);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease;
+  z-index: 39;
+}
+
+.logout-overlay.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.logout-sheet{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  bottom: 0;
+  width: 100%;
+  max-width: 430px;
+  background: #fff;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 10px 20px 24px;
+  box-shadow: 0 -8px 20px rgba(0,0,0,.12);
+  transition: transform .28s ease;
+  z-index: 40;
+}
+
+.logout-sheet.show{
+  transform: translateX(-50%) translateY(0);
+}
+
+.logout-handle{
+  width: 34px;
+  height: 4px;
+  border-radius: 999px;
+  background: #8f8b96;
+  margin: 0 auto 18px;
+}
+
+.logout-logo{
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.logout-question{
+  text-align: center;
+  margin: 0 0 16px;
+  font-size: 18px;
+  color: #2f2a34;
+}
+
+.logout-question span{
+  color: var(--milpa-orange);
+  font-weight: 800;
+}
+
+.logout-confirm-btn{
+  width: 100%;
+  height: 38px;
+  border: 0;
+  border-radius: 999px;
+  background: #f03a3a;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.logout-cancel-btn{
+  width: 100%;
+  height: 38px;
+  border: 0;
+  border-radius: 999px;
+  background: #f3deb2;
+  color: #4a4030;
+  font-size: 14px;
+  font-weight: 500;
+}

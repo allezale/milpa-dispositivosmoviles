@@ -1,0 +1,243 @@
+:root{
+
+  --milpa-orange: #F6A21A;
+  --milpa-orange-hover: #ef9810;
+  --milpa-orange-soft: rgba(246,162,26,.35);
+
+  --milpa-text: #3d3a46;
+  --milpa-text-dark: #2a2730;
+  --milpa-muted: #8b8796;
+  --milpa-muted-light: #bdbac6;
+
+  --milpa-bg: #ffffff;
+  --milpa-bg-soft: #f8f8fb;
+  --milpa-line: #e7e3ec;
+
+  --milpa-like: #F6A21A;
+  --milpa-danger: #ff2a20;
+  --milpa-success: #22c55e;
+
+  --milpa-shadow-soft: 0 2px 14px rgba(0,0,0,.06);
+  --milpa-shadow-card: 0 2px 8px rgba(0,0,0,.03);
+  --milpa-shadow-btn: 0 12px 20px rgba(246,162,26,.35);
+
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --radius-pill: 999px;
+
+--milpa-orange: #F6A21A;
+  --milpa-orange-soft: rgba(246,162,26,.35);
+  --milpa-text: #3d3a46;
+  --milpa-muted: #8b8796;
+  --milpa-line: #e7e3ec;
+  --milpa-bg-soft: #f8f8fb;
+  --milpa-like: #F6A21A;
+  --milpa-search: #e8dfd0;
+  --milpa-lilac-soft: #f1edf8;
+  --milpa-lilac-icon: #b9b2c9;
+
+}
+
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--milpa-bg);
+}
+
+
+.app-screen{
+  max-width:430px;
+  margin:0 auto;
+  min-height:100vh;
+  background:#fff;
+}
+
+
+.milpa-btn{
+  height:52px;
+  border-radius:var(--radius-pill);
+  background:var(--milpa-orange);
+  color:#fff;
+  font-weight:700;
+  border:none;
+  box-shadow:var(--milpa-shadow-btn);
+}
+
+.milpa-btn:hover{
+  background:var(--milpa-orange-hover);
+  color:#fff;
+}
+
+
+
+.home-topbar{
+  position:sticky;
+  top:0;
+  z-index:20;
+  height:72px;
+  background:#fff;
+  display:grid;
+  grid-template-columns:48px 1fr 48px;
+  align-items:center;
+  padding:0 12px;
+  box-shadow:var(--milpa-shadow-soft);
+}
+
+.icon-btn{
+  border:0;
+  background:transparent;
+  width:36px;
+  height:36px;
+  display:grid;
+  place-items:center;
+  font-size:22px;
+  cursor:pointer;
+  color:#5d5968;
+}
+
+.home-logo{
+  width:42px;
+  height:42px;
+  object-fit:contain;
+}
+
+.home-logo-link{
+  display:flex;
+  justify-content:center;
+}
+
+.home-avatar{
+  width:38px;
+  height:38px;
+  border-radius:999px;
+  object-fit:cover;
+}
+
+/* hmb menu del lado */
+
+.milpa-offcanvas{
+  width:260px;
+}
+
+.milpa-sidebar-header{
+  border:none;
+  padding:24px 18px 10px 18px;
+}
+
+.milpa-sidebar-brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.milpa-sidebar-logo{
+  width:34px;
+  height:34px;
+}
+
+.milpa-sidebar-title{
+  font-size:24px;
+  font-weight:800;
+  color:var(--milpa-orange);
+}
+
+.sidebar-link{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  text-decoration:none;
+  color:#333;
+  padding:14px 0;
+  font-size:16px;
+}
+
+.sidebar-link i{
+  width:22px;
+}
+
+/* navbar inferior */
+
+.bottom-nav{
+  position:fixed;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:0;
+  width:100%;
+  max-width:430px;
+  height:78px;
+  background:#fff;
+  border-top:1px solid #ded9e7;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  z-index:30;
+}
+
+.bottom-nav-link{
+  position:relative;
+  color:#a09aad;
+  text-decoration:none;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  font-size:13px;
+}
+
+.bottom-nav-link i{
+  font-size:21px;
+}
+
+.bottom-nav-link.active{
+  color:var(--milpa-orange);
+}
+
+.bottom-nav-link.active::before{
+  content:"";
+  position:absolute;
+  top:0;
+  width:38px;
+  height:3px;
+  border-radius:999px;
+  background:var(--milpa-orange);
+}
+
+.icon-btn,
+.avatar-btn,
+.post-menu-btn{
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+.post-actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding-top: 4px;
+}
+
+.post-action{
+  border: 0;
+  background: transparent;
+  color: #8b8796;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.post-action i{
+  font-size: 16px;
+}

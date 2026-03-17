@@ -10,7 +10,8 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/chat.css">
 </head>
 
 <body class="bg-white app-body">
@@ -18,19 +19,40 @@
   <div class="app-screen home-screen">
 
 <!-- barra de arriba el menu el logo y pfp -->
-    <header class="home-topbar">
-      <button class="icon-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#milpaMenu" aria-label="Abrir menú">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+<nav class="home-topbar">
 
-      <a href="home.html" class="home-logo-link" aria-label="Inicio">
-        <img src="img/logo.png" alt="Milpa" class="home-logo">
-      </a>
+  <button class="icon-btn" type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#milpaMenu"
+          aria-label="Abrir menú">
 
-      <button class="avatar-btn" type="button" onclick="window.location.href='profile.html'">
-        <img src="img/avatar.png" alt="Perfil" class="home-avatar">
-      </button>
-    </header>
+    <i class="fa-solid fa-bars"></i>
+
+  </button>
+
+
+  <a href="home.html"
+     class="home-logo-link"
+     aria-label="Inicio">
+
+    <img src="img/logo.png"
+         alt="Milpa"
+         class="home-logo">
+
+  </a>
+
+
+  <button class="avatar-btn"
+          type="button"
+          onclick="window.location.href='profile.html'">
+
+    <img src="img/avatar.png"
+         alt="Perfil"
+         class="home-avatar">
+
+  </button>
+
+</nav>
 
 <!-- hmb de la izq-->
 <div class="offcanvas offcanvas-start milpa-offcanvas" tabindex="-1" id="milpaMenu" aria-labelledby="milpaMenuLabel">
@@ -45,11 +67,6 @@
     <a href="profile.html" class="sidebar-link">
       <i class="fa-regular fa-user"></i>
       <span>Perfil</span>
-    </a>
-
-    <a href="favorites.html" class="sidebar-link">
-      <i class="fa-regular fa-heart"></i>
-      <span>Favoritos</span>
     </a>
 
     <a href="settings.html" class="sidebar-link">
@@ -76,7 +93,7 @@
 
         <!-- Chat 1 -->
         <article class="chat-item">
-          <button type="button" class="chat-item-btn">
+          <button type="button" class="chat-item-btn" onclick="window.location.href='chat-room.html'">
             <div class="chat-avatar-wrap">
               <img src="img/user1.png" alt="Alexis Figueroa" class="chat-avatar">
               <span class="chat-status online"></span>

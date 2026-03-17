@@ -11,7 +11,7 @@
   --milpa-lilac-icon: #b9b2c9;
 }
 
-/* Reset */
+
 *{
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ body{
   background: #ffffff;
 }
 
-/*SPLASH*/
+
 .splash-body{
   height: 100vh;
   background: #ffffff;

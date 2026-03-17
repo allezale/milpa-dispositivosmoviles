@@ -1,0 +1,282 @@
+.edit-topbar{
+  height: 76px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+  box-shadow: 0 2px 14px rgba(0,0,0,.06);
+}
+
+.edit-back-btn{
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background: transparent;
+  color: #2f2a34;
+  font-size: 22px;
+  display: grid;
+  place-items: center;
+}
+
+.edit-title{
+  margin: 0;
+  font-size: 19px;
+  font-weight: 500;
+  color: #2f2a34;
+}
+
+.edit-profile-page{
+  min-height: calc(100vh - 154px);
+  background: var(--milpa-bg);
+  padding: 34px 24px 30px;
+}
+
+/* foto */
+.edit-photo-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.edit-profile-avatar{
+  width: 102px;
+  height: 102px;
+  border-radius: 999px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.edit-photo-link{
+  border: 0;
+  background: transparent;
+  color: #b77b14;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+
+.edit-form-section{
+  margin-bottom: 28px;
+}
+
+.edit-field{
+  margin-bottom: 14px;
+}
+
+.edit-field label{
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1f1b24;
+}
+
+.edit-field input{
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #cfc8da;
+  background: transparent;
+  padding: 8px 0 10px;
+  outline: none;
+  font-size: 15px;
+  color: #494451;
+}
+
+/* flags */
+
+
+.flag-btn{
+  width: 42px;
+  height: 28px;
+  border: 0;
+  background: transparent;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.flag-btn.active{
+  outline: 3px solid var(--milpa-orange);
+  outline-offset: 2px;
+}
+
+.flag-img{
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* nacionalidad */
+.edit-nationality-card{
+  width: 100%;
+  min-height: 56px;
+  background: #f3deb2;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px 0 16px;
+  margin-bottom: 110px;
+}
+
+.edit-nationality-left{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.edit-nationality-flag{
+  font-size: 24px;
+}
+
+.edit-nationality-text{
+  font-size: 14px;
+  font-weight: 500;
+  color: #2d2831;
+}
+
+.edit-toggle-btn{
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: 0;
+  background: #e6d9bd;
+  color: #7d756a;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+}
+
+.edit-toggle-btn.active{
+  background: var(--milpa-orange);
+  color: #fff;
+}
+
+/* submit */
+.edit-submit-wrap{
+  display: flex;
+  justify-content: center;
+}
+
+.edit-submit-btn{
+  width: 140px;
+  height: 40px;
+  border-radius: 14px;
+  border: 0;
+  background: #f3deb2;
+  color: #2d2831;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.flag-img{
+  width: 34px;
+  height: 22px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.flag-btn{
+  width: 42px;
+  height: 28px;
+  border: 0;
+  background: transparent;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.flag-btn img{
+  width: 34px;
+  height: 22px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.flag-btn.active{
+  outline: 3px solid var(--milpa-orange);
+  outline-offset: 2px;
+}
+
+.edit-flags-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 18px 0 22px;
+  flex-wrap: nowrap;
+}
+
+.edit-nationality-card{
+  width: 100%;
+  min-height: 58px;
+  background: #f3deb2;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px 0 16px;
+  margin-bottom: 110px;
+}
+
+.edit-nationality-left{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.edit-nationality-flag{
+  font-size: 24px;
+  line-height: 1;
+}
+
+.edit-nationality-text{
+  font-size: 14px;
+  font-weight: 500;
+  color: #2d2831;
+}
+
+.edit-toggle-btn{
+  width: 54px;
+  height: 34px;
+  border-radius: 999px;
+  border: 2px solid #1f1b24;
+  background: #f3deb2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2px;
+  transition: all .25s ease;
+}
+
+.edit-toggle-circle{
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: var(--milpa-orange);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  transition: all .25s ease;
+}
+
+.edit-toggle-btn.active{
+  justify-content: flex-end;
+}
+
+.edit-toggle-btn:not(.active){
+  justify-content: flex-start;
+}
+
+.edit-toggle-btn:not(.active) .edit-toggle-circle{
+  background: #d5c6a4;
+  color: #7f7460;
+}

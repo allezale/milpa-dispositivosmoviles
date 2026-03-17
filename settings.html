@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Milpa - Ajustes</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/settings.css">
+</head>
+
+<body class="bg-white app-body">
+
+  <div class="app-screen home-screen">
+
+   
+    <nav class="settings-topbar">
+      <button class="settings-back-btn" type="button" onclick="window.location.href='profile.html'" aria-label="Volver">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+
+      <h1 class="settings-title">Ajustes</h1>
+    </nav>
+
+    <main class="settings-page">
+
+   
+      <section class="settings-user-card">
+        <img src="img/avatar.png" alt="Luis Serra" class="settings-user-avatar">
+
+        <div class="settings-user-info">
+          <h2 class="settings-user-name">Luis Serra <span class="settings-flag">🇭🇳</span></h2>
+        </div>
+      </section>
+
+    
+      <section class="settings-list">
+
+        <div class="settings-item">
+          <div class="settings-left">
+            <i class="fa-regular fa-bell settings-icon"></i>
+            <span>Notificaciones</span>
+          </div>
+
+          <button type="button" class="settings-toggle active" id="notificationsToggle" aria-label="Activar o desactivar notificaciones">
+            <span class="settings-toggle-circle"><i class="fa-solid fa-check"></i></span>
+          </button>
+        </div>
+
+        <div class="settings-item">
+          <div class="settings-left">
+            <i class="fa-solid fa-language settings-icon"></i>
+            <span>Idioma</span>
+          </div>
+
+          <span class="settings-value">ES</span>
+        </div>
+
+        <div class="settings-item">
+          <div class="settings-left">
+            <i class="fa-regular fa-moon settings-icon"></i>
+            <span>Modo Oscuro</span>
+          </div>
+
+          <button type="button" class="settings-toggle" id="darkModeToggle" aria-label="Activar o desactivar modo oscuro">
+            <span class="settings-toggle-circle"><i class="fa-solid fa-xmark"></i></span>
+          </button>
+        </div>
+
+        <div class="settings-item">
+          <div class="settings-left">
+            <i class="fa-solid fa-circle-info settings-icon"></i>
+            <span>Privacidad y Seguridad</span>
+          </div>
+
+          <i class="fa-solid fa-chevron-right settings-arrow"></i>
+        </div>
+
+      </section>
+
+  
+      <div class="settings-logout-wrap">
+        <button type="button" class="settings-logout-btn" id="openLogoutModal">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          Cerrar Sesión
+        </button>
+      </div>
+
+    </main>
+
+    
+    <nav class="bottom-nav">
+      <a href="home.html" class="bottom-nav-link" data-page="home">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+
+      <a href="chat.html" class="bottom-nav-link" data-page="chat">
+        <i class="fa-solid fa-comments"></i>
+        <span>Chat</span>
+      </a>
+
+      <a href="create.html" class="bottom-nav-link" data-page="create">
+        <i class="fa-regular fa-square-plus"></i>
+        <span>Crear</span>
+      </a>
+
+      <a href="notifications.html" class="bottom-nav-link" data-page="notifications">
+        <i class="fa-regular fa-bell"></i>
+        <span>Notificaciones</span>
+      </a>
+    </nav>
+
+
+    <div class="logout-overlay" id="logoutOverlay"></div>
+
+  
+    <section class="logout-sheet" id="logoutSheet" aria-hidden="true">
+      <div class="logout-handle"></div>
+
+      <img src="img/logo.png" alt="Milpa" class="logout-logo">
+
+      <p class="logout-question">¿Salir de <span>milpa</span>?</p>
+
+      <button type="button" class="logout-confirm-btn" id="confirmLogout">
+        Salir
+      </button>
+
+      <button type="button" class="logout-cancel-btn" id="cancelLogout">
+        Cancelar
+      </button>
+    </section>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/settings.js"></script>
+</body>
+</html>

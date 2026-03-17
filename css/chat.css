@@ -1,0 +1,169 @@
+/* chats */
+
+.chat-page{
+  padding:24px 16px 90px 16px;
+  background:var(--milpa-bg);
+  min-height:100vh;
+}
+
+.chat-header-block{
+  margin-bottom:22px;
+}
+
+.chat-title{
+  font-size:22px;
+  font-weight:900;
+  color:#131313;
+  margin-bottom:16px;
+}
+
+/* barra bsq*/
+
+.chat-search{
+  height:50px;
+  background:var(--milpa-search);
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  padding:0 14px 0 18px;
+}
+
+.chat-search input{
+  flex:1;
+  border:0;
+  outline:none;
+  background:transparent;
+  font-size:15px;
+  color:#5a5348;
+}
+
+.chat-search input::placeholder{
+  color:#5a5348;
+}
+
+.chat-search button{
+  border:0;
+  background:transparent;
+  color:#4f483f;
+  font-size:20px;
+  width:34px;
+  height:34px;
+  cursor:pointer;
+}
+
+/* lista de chats */
+
+.chat-list{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.chat-item{
+  width:100%;
+}
+
+.chat-item-btn{
+  width:100%;
+  border:0;
+  background:transparent;
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  text-align:left;
+  padding:6px 0;
+  cursor:pointer;
+}
+
+/* avatar pfp*/
+
+.chat-avatar-wrap{
+  position:relative;
+  width:48px;
+  height:48px;
+  flex-shrink:0;
+}
+
+.chat-avatar{
+  width:48px;
+  height:48px;
+  border-radius:999px;
+  object-fit:cover;
+  display:block;
+}
+
+.chat-status{
+  position:absolute;
+  right:0;
+  bottom:2px;
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  border:2px solid #fff;
+}
+
+.chat-status.online{
+  background:var(--milpa-success);
+}
+
+.chat-status.offline{
+  background:#b3b3b3;
+}
+
+/* info */
+
+.chat-info{
+  flex:1;
+  min-width:0;
+}
+
+.chat-row-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-bottom:3px;
+}
+
+.chat-name{
+  margin:0;
+  font-size:15px;
+  font-weight:800;
+  color:#181818;
+}
+
+.chat-time{
+  font-size:13px;
+  color:#8d8a90;
+  white-space:nowrap;
+}
+
+.chat-row-bottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+}
+
+.chat-preview{
+  margin:0;
+  font-size:14px;
+  color:#7d7a81;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.chat-badge{
+  min-width:24px;
+  height:24px;
+  padding:0 6px;
+  border-radius:999px;
+  background:var(--milpa-danger);
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}

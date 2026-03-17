@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Milpa - Editar perfil</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/edit-profile.css">
+</head>
+
+<body class="bg-white app-body">
+
+  <div class="app-screen home-screen">
+
+    <nav class="edit-topbar">
+      <button class="edit-back-btn" type="button" onclick="window.location.href='profile.html'" aria-label="Volver">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+
+      <h1 class="edit-title">Editar perfil</h1>
+    </nav>
+
+    <main class="edit-profile-page">
+
+      <!-- fotito -->
+      <section class="edit-photo-section">
+        <img src="img/avatar.png" alt="Foto de perfil" class="edit-profile-avatar">
+
+        <button type="button" class="edit-photo-link">
+          cambiar foto
+        </button>
+      </section>
+
+      <!-- form -->
+      <section class="edit-form-section">
+
+        <div class="edit-field">
+          <label for="editName">Nombre</label>
+          <input id="editName" type="text" value="Luis Serra">
+        </div>
+
+        <div class="edit-field">
+          <label for="editDescription">Descripción</label>
+          <input id="editDescription" type="text" value="Campeón mundial de ser guapo">
+        </div>
+
+      </section>
+
+  <!-- banderas -->
+
+      <section class="edit-flags-section">
+<button class="flag-btn active">
+  <img src="img/flags/hn.png" class="flag-img">
+</button>
+
+<button class="flag-btn">
+  <img src="img/flags/sv.png" class="flag-img">
+</button>
+
+<button class="flag-btn">
+  <img src="img/flags/gt.png" class="flag-img">
+</button>
+
+<button class="flag-btn">
+  <img src="img/flags/cr.png" class="flag-img">
+</button>
+
+<button class="flag-btn">
+  <img src="img/flags/nc.png" class="flag-img">
+</button>
+</section>
+
+<!-- mostrar nacionalidad -->
+<section class="edit-nationality-card">
+  <div class="edit-nationality-left">
+    <span class="edit-nationality-text">Mostrar mi nacionalidad</span>
+  </div>
+
+  <button type="button"
+          class="edit-toggle-btn active"
+          id="nationalityToggle"
+          aria-label="Activar o desactivar mostrar nacionalidad">
+    <span class="edit-toggle-circle">
+      <i class="fa-solid fa-check"></i>
+    </span>
+  </button>
+</section>
+
+      <!-- botón listo-->
+      <div class="edit-submit-wrap">
+        <button type="button" class="edit-submit-btn" onclick="window.location.href='profile.html'">
+          Listo
+        </button>
+      </div>
+
+    </main>
+
+    <!-- navbar -->
+    <nav class="bottom-nav">
+      <a href="home.html" class="bottom-nav-link" data-page="home">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+
+      <a href="chat.html" class="bottom-nav-link" data-page="chat">
+        <i class="fa-solid fa-comments"></i>
+        <span>Chat</span>
+      </a>
+
+      <a href="create.html" class="bottom-nav-link" data-page="create">
+        <i class="fa-regular fa-square-plus"></i>
+        <span>Crear</span>
+      </a>
+
+      <a href="notifications.html" class="bottom-nav-link" data-page="notifications">
+        <i class="fa-regular fa-bell"></i>
+        <span>Notificaciones</span>
+      </a>
+    </nav>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/edit-profile.js"></script>
+</body>
+</html>
